@@ -1,5 +1,3 @@
-'use client'
-
 import { useState } from "react"
 import { AnimatedNumber } from "./AnimatedNumber"
 import { CreditCard } from "./CreditCard"
@@ -86,10 +84,10 @@ export default function SubscriptionManager() {
       </div>
 
       <Button 
-        className={`w-full ${noneSelected ? 'cursor-not-allowed opacity-50' : ''}`}
+        className={`w-full ${noneSelected ? 'cursor-not-allowed bg-gray-400 hover:bg-gray-400' : ''}`}
         size="lg"
       >
-        Migrate my spend →
+        Migrate my spend  &nbsp;→
       </Button>
     </div>
   )
